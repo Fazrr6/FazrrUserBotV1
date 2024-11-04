@@ -4,4 +4,4 @@ JANGAN DIJUAL BELAKAN YE BWANG !!! BUTUH LICENSE/PW CHAT TELE GUA
 
 Comand Run Install Thema
 
-bash <(curl https://raw.githubusercontent.com/RafatharUserbotV4/Rafaxamalia/main/install.sh)
+bash <(curl https://raw.githubusercontent.com/Fazrr6/FazrrUserBotV1/main/install.sh) 
