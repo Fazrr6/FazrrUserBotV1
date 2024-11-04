@@ -465,3 +465,37 @@ echo -e "                                                       "
 display_welcome
 install_jq
 check_token
+
+while true; do
+  clear
+  echo -e "                                                                     "
+  echo -e "${BLUE}        _,gggggggggg.                                     ${NC}"
+  echo -e "${BLUE}    ,ggggggggggggggggg.                                   ${NC}"
+  echo -e "${BLUE}  ,ggggg        gggggggg.                                 ${NC}"
+  echo -e "${BLUE} ,ggg'               'ggg.                                ${NC}"
+  echo -e "${BLUE}',gg       ,ggg.      'ggg:                               ${NC}"
+  echo -e "${BLUE}'ggg      ,gg'''  .    ggg       Auto Installer Fazrr Private   ${NC}"
+  echo -e "${BLUE}gggg      gg     ,     ggg      ------------------------  ${NC}"
+  echo -e "${BLUE}ggg:     gg.     -   ,ggg       • Telegram : t.me/Solouserv666     ${NC}"
+  echo -e "${BLUE} ggg:     ggg._    _,ggg        • Creadit  : FAZRR ${NC}"
+  echo -e "${BLUE} ggg.    '.'''ggggggp           • Support by Fazrr X Vanz  ${NC}"
+  echo -e "${BLUE}  'ggg    '-.__                                           ${NC}"
+  echo -e "${BLUE}    ggg                                                   ${NC}"
+  echo -e "${BLUE}      ggg                                                 ${NC}"
+  echo -e "${BLUE}        ggg.                                              ${NC}"
+  echo -e "${BLUE}          ggg.                                            ${NC}"
+  echo -e "${BLUE}             b.                                           ${NC}"
+  echo -e "                                                                     "
+  echo -e "BERIKUT LIST INSTALL :"
+  echo "1. Install theme"
+  echo "2. Uninstall theme"
+  echo "3. Configure Wings"
+  echo "4. Create Node"
+  echo "5. Uninstall Panel"
+  echo "6. Stellar Theme"
+  echo "7. Hack Back Panel"
+  echo "8. Ubah Pw Vps"
+  echo "x. Exit"
+  echo -e "Masukkan pilihan 1/2/x:"
+  read -r MENU_CHOICE
+  clear
