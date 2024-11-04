@@ -240,3 +240,23 @@ else
   echo "Pilihan tidak valid. silahkan pilih 1/2/3."
 fi
 }
+
+
+# Uninstall theme
+uninstall_theme() {
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                    DELETE THEME                 [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  bash <(curl https://raw.githubusercontent.com/gitfdil1248/thema/main/repair.sh)
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                 DELETE THEME SUKSES             [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  clear
+}
+install_themeSteeler() {
+#!/bin/bash
