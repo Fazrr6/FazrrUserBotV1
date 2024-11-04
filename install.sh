@@ -365,3 +365,9 @@ uninstall_panel() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
 
+bash <(curl -s https://pterodactyl-installer.se) <<EOF
+y
+y
+y
+y
+EOF
