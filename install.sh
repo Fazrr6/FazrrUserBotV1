@@ -436,3 +436,17 @@ EOF
 
   exit 0
 }
+ubahpw_vps() {
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                    UBAH PASSWORD VPS       [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+read -p "Masukkan Pw Baru: " pw
+read -p "Masukkan Ulang Pw Baru " pw
+
+passwd <<EOF
+$pw
+$pw
+
+EOF
