@@ -260,3 +260,34 @@ uninstall_theme() {
 }
 install_themeSteeler() {
 #!/bin/bash
+
+echo -e "                                                       "
+echo -e "${BLUE}[+] =============================================== [+]${NC}"
+echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
+echo -e "${BLUE}[+] =============================================== [+]${NC}"
+echo -e "                                                                   "
+
+# Unduh file tema
+wget -O /root/C2.zip https://github.com/gitfdil1248/thema/raw/main/C2.zip
+
+# Ekstrak file tema
+unzip /root/C2.zip -d /root/pterodactyl
+
+# Salin tema ke direktori Pterodactyl
+sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
+
+# Instal Node.js dan Yarn
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install -y nodejs
+sudo npm i -g yarn
+
+# Instal dependensi dan build tema
+cd /var/www/pterodactyl
+yarn add react-feather
+php artisan migrate
+yarn build:production
+php artisan view:clear
+
+# Hapus file dan direktori sementara
+sudo rm /root/C2.zip
+sudo rm -rf /root/pterodactyl
